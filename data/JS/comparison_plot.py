@@ -37,8 +37,8 @@ for record, color in zip(recorda_B, colors):
     )
 
 # Plot formatting
-plt.xlabel(r"$h(r,t\to\infty)$ [1]")
-plt.ylabel("$H$ [1]")
+plt.ylabel(r"$h(r,t\to\infty)$ [1]")
+plt.xlabel("$r$ [1]")
 plt.xlim(1, 2)
 plt.ylim(-0.3, 0.15)
 plt.grid(True)
