@@ -113,7 +113,7 @@ for omega, name_exp, our_a in zip(labels, names_exp, our_as):
                 df["x"],
                 df["y"],
                 color="black",
-                label=rf"igueiredo et al. (2016), with $a$ = {np.round(1-xi,3)}",
+                label=rf"Figueiredo et al. (2016), with $a$ = {np.round(1-xi,3)}",
                 linestyle=":",
             )
 
