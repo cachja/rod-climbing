@@ -1,7 +1,7 @@
 # Rod Climbing of Viscoelastic Models
 
 This repository provides a fully runnable minimal numerical experiment accompanying the paper
-*Rod Climbing of Viscoelastic Models*. The implementation is built on the **Firedrake** finite
+*Thermodynamically consistent Johnson--Segalman--Giesekus model: numerical simulation of rod climbing effect*. The implementation is built on the **Firedrake** finite
 element library and features a time-stepping solver for **Johnson–Segalman–Giesekus-type**
 viscoelastic models.
 
