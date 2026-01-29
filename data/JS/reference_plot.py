@@ -30,7 +30,7 @@ for omega, name_exp, our_a in zip(labels, names_exp, our_as):
     df["y"] = pd.concat([pd.Series([df["y"].iloc[0]]), df["y"]], ignore_index=True)
 
     # Plot curve
-    if "Debb" in names_exp:
+    if "Debb" in name_exp:
         plt.scatter(df["x"], df["y"], color="black", label=f"Debbaut and Hocq (1992)")
     else:
         plt.scatter(df["x"], df["y"], color="black", label=f"Beavers and Joseph (1975)")
@@ -50,7 +50,7 @@ for omega, name_exp, our_a in zip(labels, names_exp, our_as):
             xs,
             vals,
             color=color,
-            label=rf"Present work, model B, with $a$ = {np.round(a,3)}",
+            label=rf"Present work, Model II, with $a$ = {np.round(a,3)}",
             marker="d",
             markevery=4,
             markersize=2,
@@ -117,7 +117,7 @@ for omega, name_exp, our_a in zip(labels, names_exp, our_as):
                 linestyle=":",
             )
 
-    ######## My model B data
+    ######## My model A data
     data_A = np.load(
         f"my_data/surface_shapes_all_{omega}_a{our_a}.npz", allow_pickle=True
     )
@@ -132,7 +132,7 @@ for omega, name_exp, our_a in zip(labels, names_exp, our_as):
             xs,
             vals,
             color=color,
-            label=rf"Present work, model A, with $a$ = {a:.3f}",
+            label=rf"Present work, Model I, with $a$ = {a:.3f}",
             marker="d",
             markevery=4,
             markersize=2,
