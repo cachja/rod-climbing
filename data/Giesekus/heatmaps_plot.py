@@ -6,14 +6,11 @@ from scipy.special import k0
 from scipy.integrate import quad
 
 name = "my_data"
-ABCD = ["We0.2G0.3", "We0.2G2", "We0.04G70", "We0.01G140"]
+ABCD = ["We0.2G0.07", "We0.2G2", "We0.04G70", "We0.01G140"]
 abcd_list = ["A", "B", "C", "D"]
 
 for folder_name, case_name in zip(ABCD, abcd_list):
-    if case_name == "A":
-        interval_list = ["0.1-1", "1-5", "7.5-25"]
-    else:
-        interval_list = ["0.1-0.5", "1-2", "3-4", "5.0-7.5", "10-15", "20-25"]
+    interval_list = ["0.1-0.5", "1-2", "3-4", "5.0-7.5", "10-15", "20-25"]
     Bond_all = []
     Height_all = []
 
